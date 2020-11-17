@@ -29,7 +29,7 @@ void bfs(int v, int** arr, bool* num, int m) {
 		printf("%d, ", v);
 
 
-		for (int j = 0; j < 6; j++) {
+		for (int j = 0; j < m; j++) {
 			if ((arr[v][j] == 1) && (num[j] == false)) { q.push(j); num[j] = true; }
 
 		}
